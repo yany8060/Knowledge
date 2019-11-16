@@ -17,9 +17,19 @@ public class InsertionSort {
                 }
             }
 
+            /** 
+             * 另一种查找插入位置
+                while(j >=0 && a[j] > value) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+            */
+
             // 由于执行了j-- 所以要+1
             a[j + 1] = value;
         }
     }
+
+    
     
 }
