@@ -1,3 +1,7 @@
+/**
+ * 冒泡排序
+ * 
+ */
 public class BubbleSort {
 
     // 冒泡排序，a是数组，n表示数组大小

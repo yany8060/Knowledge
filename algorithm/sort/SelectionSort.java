@@ -1,3 +1,6 @@
+/**
+ * 选择排序
+ */
 public class SelectionSort {
 
     public static void selectionSort(int[] a, int n) {
