@@ -33,4 +33,31 @@ public class QuickSort {
         return l;
     }
 
+    public static int partition2(int[] a, int l, int r) {
+        int pivot = a[r];
+
+        int i = l;
+        for(int j = l; j < r; j++) {
+            if(l == i) {
+                i++;
+                continue;
+            }
+            if(a[l] < pivot) {
+                swap(a, i, j);
+                i++;
+            }
+        }
+        swap(a, i, r);
+        return i;
+    }
+
+    private static void swap(int[] a, int i, int j) {
+        if (i == j) {
+            return;
+        }
+
+        int tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
+    }
 }
