@@ -34,7 +34,7 @@ public class Heap {
         }
         a[1] = a[count];
         --count;
-
+        heapify(a, count, 1);
     }
 
     private void heapify(int[] a, int n, int i) {
