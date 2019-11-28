@@ -1,3 +1,5 @@
+package datastructure.queue;
+
 public class QueueBasedOnLinkedList {
 
     // 队列的队首和队尾
