@@ -38,10 +38,6 @@ public class QueueBasedOnLinkedList {
             this.data = data;
             this.next = next;
         }
-
-        public String getData() {
-            return data;
-        }
     }
 
 }
