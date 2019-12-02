@@ -1,3 +1,5 @@
+package algorithm.sort;
+
 /**
  * 选择排序
  */

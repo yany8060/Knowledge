@@ -1,3 +1,5 @@
+package algorithm.interview;
+
 /**
  * 
  */
@@ -7,7 +9,7 @@ public class KthSmallest {
     public static int kthSmallest(int[] a, int k) {
         if (a == null || k < 0) return -1;
 
-
+        return -1;
 
     }
 

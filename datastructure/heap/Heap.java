@@ -28,6 +28,9 @@ public class Heap {
         }
     }
 
+    /**
+     * 删除最大值
+     */
     public void removeMax() {
         if (count == 0) {
             return;
@@ -37,12 +40,28 @@ public class Heap {
         heapify(a, count, 1);
     }
 
+
+
+public void buildHeap(int arr[]) {
+
+}
+
+
+    /**
+     * 堆化
+     * @param a
+     * @param n
+     * @param i
+     */
     private void heapify(int[] a, int n, int i) {
         while (true) {
+            // 最大值位置
             int maxPos = i;
+            
             if(i * 2 <= n && a[i] < a[i * 2]) {
                 maxPos = i * 2;
             }
+            // 与右子节点（i * 2 + 1）比较，获取最大值位置
             if((i * 2 + 1) <= n && a[maxPos] < a[i * 2 + 1]) {
                 maxPos = i * 2 + 1;
             }

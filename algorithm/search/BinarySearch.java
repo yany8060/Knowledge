@@ -1,3 +1,5 @@
+package algorithm.search;
+
 /**
  * 
  */
@@ -37,6 +39,13 @@
         }
     }
 
+    /**
+     * 二分查找第一个
+     * @param a
+     * @param n
+     * @param value
+     * @return
+     */
     public static int binarySearchFirst(int a[], int n, int value) {
         int low = 0, high = n - 1;
         while (low < high) {
@@ -56,6 +65,13 @@
         return -1;
     }
 
+    /**
+     * 二分查找最后一个
+     * @param a
+     * @param n
+     * @param value
+     * @return
+     */
     public static int binarySearchLast(int a[], int n, int value) {
         int low = 0, high = n - 1;
         while (low < high) {
@@ -68,10 +84,11 @@
                 if (mid == high || a[mid + 1] != value) {
                     return mid;
                 } else {
-                    lo = mid + 1;
+                    low = mid + 1;
                 }
             }
         }
+        return -1;
     }
     
      
