@@ -1,3 +1,5 @@
+package datastructure.stack;
+
 public class StackBasedOnLinkedList {
 
     private Node top= null;
@@ -14,7 +16,7 @@ public class StackBasedOnLinkedList {
 
     public int pop() {
         if(top == null) return -1;
-        int ret = top.value;
+        int ret = top.data;
         top = top.next;
         return ret;
     }
@@ -27,10 +29,6 @@ public class StackBasedOnLinkedList {
         public Node(int data, Node next) {
             this.data = data;
             this.next = next;
-        }
-
-        public int getData() {
-            return data;
         }
     }
 }

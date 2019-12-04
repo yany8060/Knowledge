@@ -1,3 +1,5 @@
+package algorithm.sort;
+
 /**
  * 归并算法
  * 

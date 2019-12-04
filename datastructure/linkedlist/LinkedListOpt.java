@@ -1,3 +1,5 @@
+package datastructure.linkedlist;
+
 public class LinkedListOpt {
 
     // 单链表反转

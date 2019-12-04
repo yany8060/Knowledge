@@ -1,3 +1,5 @@
+package datastructure.queue;
+
 public class QueueBasedOnLinkedList {
 
     // 队列的队首和队尾
@@ -35,10 +37,6 @@ public class QueueBasedOnLinkedList {
         public Node(String data, Node next) {
             this.data = data;
             this.next = next;
-        }
-
-        public String getData() {
-            return data;
         }
     }
 

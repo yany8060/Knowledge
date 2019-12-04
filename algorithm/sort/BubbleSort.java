@@ -1,3 +1,5 @@
+package algorithm.sort;
+
 /**
  * 冒泡排序
  * 
@@ -53,7 +55,7 @@ public class BubbleSort {
 
         for(int i = 0; i < n; i++) {
             boolean flag = false;
-            for(j = 0; j < sortBorder; j++) {
+            for(int j = 0; j < sortBorder; j++) {
                 if(a[j] <= a[j + 1]) {
                     int tmp = a[j + 1];
                     a[j + 1] = a[j];
